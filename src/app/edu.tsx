@@ -1,86 +1,130 @@
-"use client"; // Ensures client-side rendering
+"use client";
 import { createContext } from "react";
 import React from "react";
 import Image from "next/image";
 
-// Import Images
-import js from "../assets/js.png"; // Ensure correct path
-import figmaskill from "../assets/figmaskill.png"; // Ensure correct path
-
 const Education = () => {
   return (
-    <div className="relative bg-gradient-to-br from-white to-gray-100 flex flex-col py-20 px-10 lg:px-20 min-h-screen">
-      
-      {/* Floating Decorative Images */}
-      <Image 
-        src={js} 
-        alt="JavaScript Logo" 
-        width={140} 
-        height={140} 
-        className="absolute top-0 right-0 opacity-30 w-40"
-      />
-    
-      <Image 
-        src={figmaskill} 
-        alt="Figma Skill" 
-        width={200} 
-        height={200} 
-        className="absolute bottom-0 right-0 opacity-20 w-48"
-      />
+    <div id="education" className="relative bg-white text-black py-32 px-6 lg:px-20">
 
-      {/* Heading */}
-      <h1 className="text-6xl font-extrabold text-gray-900 mb-16 border-b-4 border-purple-500 inline-block">
-        EDUCATION
-      </h1>
+      {/* Section Header */}
+      <div className="max-w-7xl mx-auto mb-20">
+        <div className="flex items-center gap-4 mb-4">
+          <div className="h-[2px] w-12 bg-black"></div>
+          <span className="text-sm font-bold tracking-[0.3em] text-gray-500">BACKGROUND</span>
+        </div>
+        <h2 className="text-5xl md:text-6xl font-black text-black tracking-tight">
+          Education & Strengths
+        </h2>
+      </div>
 
-      {/* Education Section */}
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto">
-        
+      {/* Education Cards */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+
         {/* University */}
-        <div className="bg-white bg-opacity-80 backdrop-blur-md p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
-          <h2 className="text-2xl font-bold text-gray-800">CT University | 2021-2025</h2>
-          <p className="text-lg text-gray-700 mt-2">
-            B.Tech Computer Science Engineering (AI & Data Science)
-          </p>
-          <p className="text-gray-600 mt-2">
-            <strong>Relevant Coursework:</strong> DSA, Web Development, Machine Learning
-          </p>
+        <div className="group relative bg-gradient-to-br from-gray-50 to-white p-8 border-2 border-gray-200 hover:border-black transition-all duration-300 hover:shadow-2xl">
+          <div className="absolute top-0 left-0 w-1 h-full bg-black transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+          <div className="space-y-4">
+            <div className="flex items-start justify-between">
+              <div>
+                <h3 className="text-2xl font-bold text-black">CT University</h3>
+                <p className="text-sm font-semibold text-gray-500 mt-1">2021 - 2025</p>
+              </div>
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
+                <span className="text-xl">🎓</span>
+              </div>
+            </div>
+            <p className="text-lg font-medium text-gray-700">
+              B.Tech Computer Science Engineering
+            </p>
+            <p className="text-sm text-gray-600">
+              Specialization: AI & Data Science
+            </p>
+            <div className="pt-4 border-t border-gray-200">
+              <p className="text-xs font-semibold text-gray-500 mb-2">KEY COURSEWORK</p>
+              <div className="flex flex-wrap gap-2">
+                {['DSA', 'Web Development', 'Machine Learning'].map((course, i) => (
+                  <span key={i} className="px-3 py-1 bg-black/5 text-xs font-semibold text-gray-700 rounded-full">
+                    {course}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* School */}
-        <div className="bg-white bg-opacity-80 backdrop-blur-md p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
-          <h2 className="text-2xl font-bold text-gray-800">GNM SCHOOL | 2019-2020</h2>
-          <p className="text-lg text-gray-700 mt-2">Non-Medical (Engineering)</p>
-          <p className="text-gray-600 mt-2">
-            <strong>Relevant Coursework:</strong> Mathematics, Physics, Chemistry
-          </p>
+        <div className="group relative bg-gradient-to-br from-gray-50 to-white p-8 border-2 border-gray-200 hover:border-black transition-all duration-300 hover:shadow-2xl">
+          <div className="absolute top-0 left-0 w-1 h-full bg-black transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
+          <div className="space-y-4">
+            <div className="flex items-start justify-between">
+              <div>
+                <h3 className="text-2xl font-bold text-black">GNM School</h3>
+                <p className="text-sm font-semibold text-gray-500 mt-1">2019 - 2020</p>
+              </div>
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
+                <span className="text-xl">📚</span>
+              </div>
+            </div>
+            <p className="text-lg font-medium text-gray-700">
+              Non-Medical (Engineering)
+            </p>
+            <p className="text-sm text-gray-600">
+              Foundation in Science & Mathematics
+            </p>
+            <div className="pt-4 border-t border-gray-200">
+              <p className="text-xs font-semibold text-gray-500 mb-2">KEY SUBJECTS</p>
+              <div className="flex flex-wrap gap-2">
+                {['Mathematics', 'Physics', 'Chemistry'].map((subject, i) => (
+                  <span key={i} className="px-3 py-1 bg-black/5 text-xs font-semibold text-gray-700 rounded-full">
+                    {subject}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
 
       {/* Strengths Section */}
-      <h1 className="text-5xl font-extrabold text-gray-900 mt-24 mb-12 border-b-4 border-purple-500 inline-block">
-        MY STRENGTHS
-      </h1>
-
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto">
-        
-        {/* Adaptability */}
-        <div className="bg-white bg-opacity-80 backdrop-blur-md p-6 rounded-xl shadow-lg border-l-4 border-green-500">
-          <h2 className="text-2xl font-semibold text-gray-800">Adaptability & Fast Learning</h2>
-          <p className="text-gray-700 mt-2">
-            I am highly adaptable and can learn new technologies quickly. My ability to grasp new concepts and implement them efficiently allows me to excel in dynamic environments.
-          </p>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center gap-4 mb-12">
+          <div className="h-[2px] w-12 bg-black"></div>
+          <span className="text-sm font-bold tracking-[0.3em] text-gray-500">CORE COMPETENCIES</span>
         </div>
 
-        {/* Problem-Solving */}
-        <div className="bg-white bg-opacity-80 backdrop-blur-md p-6 rounded-xl shadow-lg border-l-4 border-red-500">
-          <h2 className="text-2xl font-semibold text-gray-800">Problem-Solving Mindset</h2>
-          <p className="text-gray-700 mt-2">
-            I enjoy tackling complex problems with logical and creative solutions. My strong foundation in data structures and algorithms helps me optimize solutions effectively.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
+          {/* Adaptability */}
+          <div className="group relative bg-black text-white p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+            <div className="relative z-10 space-y-4">
+              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-2xl font-bold">Adaptability & Fast Learning</h3>
+              <p className="text-gray-300 leading-relaxed">
+                Highly adaptable with the ability to quickly learn and implement new technologies. Excel in dynamic environments by grasping concepts efficiently and applying them effectively.
+              </p>
+            </div>
+          </div>
+
+          {/* Problem-Solving */}
+          <div className="group relative bg-gradient-to-br from-gray-50 to-white p-8 border-2 border-gray-200 hover:border-black hover:shadow-2xl transition-all duration-300 overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-black/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+            <div className="relative z-10 space-y-4">
+              <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black transition-colors">
+                <span className="text-2xl group-hover:grayscale-0 transition-all">🎯</span>
+              </div>
+              <h3 className="text-2xl font-bold text-black">Problem-Solving Mindset</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Tackle complex problems with logical and creative solutions. Strong foundation in data structures and algorithms enables effective optimization and elegant problem-solving.
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );

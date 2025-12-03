@@ -1,54 +1,90 @@
 import React from "react";
-import ellipse from "../assets/ellipse.png";
 import Image from "next/image";
 
 const VResume = () => {
   return (
-    <div className="relative md:min-h-screen flex items-center justify-center">
-      {/* Colorful Blurred Background */}
-      <div className="absolute top-0 left-0 w-full h-full">
-        <Image
-          src={ellipse}
-          alt="Logo"
-          width={90}
-          height={90}
-          className="absolute w-24 h-24 top-0 right-0 md:w-96 md:h-96"
-        />
-        <div className="absolute w-32 h-32 bg-blue-400 opacity-30 blur-3xl bottom-10 left-20 rounded-full"></div>
-        <div className="absolute w-40 h-40 bg-purple-400 opacity-30 blur-3xl top-10 right-0 rounded-full"></div>
+    <div id="resume" className="relative bg-white text-black py-32 px-6 lg:px-20">
+
+      {/* Section Header */}
+      <div className="max-w-7xl mx-auto mb-20 text-center">
+        <div className="flex items-center gap-4 mb-4 justify-center">
+          <div className="h-[2px] w-12 bg-black"></div>
+          <span className="text-sm font-bold tracking-[0.3em] text-gray-500">VIDEO INTRODUCTION</span>
+          <div className="h-[2px] w-12 bg-black"></div>
+        </div>
+        <h2 className="text-5xl md:text-6xl font-black text-black tracking-tight">
+          Video Resume
+        </h2>
+        <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+          Get to know me better through this brief introduction showcasing my journey, skills, and aspirations.
+        </p>
       </div>
 
-      {/* Main Container with Blurred Transparent Background */}
-      <div className="relative z-10 max-w-5xl w-full min-h-[70vh] mx-auto backdrop-blur-6xl border border-white shadow-lg rounded-2xl p-10 flex flex-col items-center justify-center gap-6 overflow-hidden">
-        {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-center">
-          My <span className="text-purple-500">Video Resume</span>
-        </h1>
+      {/* Video Container */}
+      <div className="max-w-5xl mx-auto">
+        <div className="group relative bg-gradient-to-br from-gray-50 to-white p-4 border-2 border-gray-200 hover:border-black transition-all duration-300 hover:shadow-2xl">
 
-        {/* Embedded YouTube Video */}
-        <div className="w-full max-w-3xl">
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/lxonQUjAjvM?si=coLqowhkvUCi24Ec"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="rounded-lg shadow-lg"
-          ></iframe>
+          {/* Decorative Corner Elements */}
+          <div className="absolute top-0 left-0 w-4 h-4 border-t-4 border-l-4 border-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute top-0 right-0 w-4 h-4 border-t-4 border-r-4 border-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute bottom-0 left-0 w-4 h-4 border-b-4 border-l-4 border-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute bottom-0 right-0 w-4 h-4 border-b-4 border-r-4 border-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+          {/* Video Embed */}
+          <div className="relative w-full aspect-video bg-black overflow-hidden">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/lxonQUjAjvM?si=coLqowhkvUCi24Ec"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0"
+            ></iframe>
+          </div>
         </div>
 
-        {/* Button to View on YouTube */}
-        <a
-          href="https://youtu.be/lxonQUjAjvM"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-block px-6 py-3 bg-purple-500 text-white font-semibold rounded-lg shadow-md hover:bg-purple-600 transition"
-        >
-          Watch on YouTube
-        </a>
+        {/* Action Buttons */}
+        <div className="flex flex-wrap gap-4 justify-center mt-10">
+          <a
+            href="https://youtu.be/lxonQUjAjvM"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/btn px-8 py-4 bg-black text-white font-bold text-sm tracking-wider hover:bg-gray-800 transition-all duration-300 hover:scale-105 flex items-center gap-3"
+          >
+            <span>WATCH ON YOUTUBE</span>
+            <span className="group-hover/btn:translate-x-1 transition-transform">↗</span>
+          </a>
+          <a
+            href="/resume.pdf"
+            download="Amit_Kumar_Resume.pdf"
+            className="px-8 py-4 border-2 border-black text-black font-bold text-sm tracking-wider hover:bg-black hover:text-white transition-all duration-300"
+          >
+            DOWNLOAD PDF RESUME
+          </a>
+        </div>
+      </div>
+
+      {/* Stats Bar */}
+      <div className="max-w-7xl mx-auto mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="text-center p-6 border-2 border-gray-200 hover:border-black transition-colors">
+          <div className="text-4xl font-black text-black mb-2">500+</div>
+          <div className="text-sm text-gray-600">LeetCode Problems</div>
+        </div>
+        <div className="text-center p-6 border-2 border-gray-200 hover:border-black transition-colors">
+          <div className="text-4xl font-black text-black mb-2">10+</div>
+          <div className="text-sm text-gray-600">Technologies</div>
+        </div>
+        <div className="text-center p-6 border-2 border-gray-200 hover:border-black transition-colors">
+          <div className="text-4xl font-black text-black mb-2">4+</div>
+          <div className="text-sm text-gray-600">Major Projects</div>
+        </div>
+        <div className="text-center p-6 border-2 border-gray-200 hover:border-black transition-colors">
+          <div className="text-4xl font-black text-black mb-2">100%</div>
+          <div className="text-sm text-gray-600">Dedication</div>
+        </div>
       </div>
     </div>
   );
