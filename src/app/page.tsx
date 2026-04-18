@@ -120,7 +120,7 @@ const Hero = () => {
                   />
                 </div>
 
-                {/* Floating Badge */}
+                {/* Floating Badge test */}
                 <div className="absolute -bottom-6 -right-6 bg-white border-4 border-gray-100 rounded-2xl px-6 py-4 shadow-xl">
                   <div className="text-xs font-semibold text-gray-500 mb-1">BASED IN</div>
                   <div className="text-lg font-bold text-black">India 🇮🇳</div>
