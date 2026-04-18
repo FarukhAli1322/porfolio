@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-black rounded-full"></div>
-              <span className="text-sm font-bold tracking-[0.3em] text-black">AMIT KUMAR</span>
+              <span className="text-sm font-bold tracking-[0.3em] text-black">FARUKH ALI</span>
             </div>
             <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
               <a href="#education" className="hover:text-black transition-colors">Education</a>
@@ -57,7 +57,7 @@ const Hero = () => {
                 </h1>
                 <div className="flex items-center gap-3">
                   <div className="h-[2px] w-12 bg-black"></div>
-                  <p className="text-lg font-medium text-gray-600">Amit Kumar</p>
+                  <p className="text-lg font-medium text-gray-600">FARUKH ALI</p>
                 </div>
               </div>
 
@@ -69,8 +69,8 @@ const Hero = () => {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-4">
                 <a
-                  href="/resume.pdf"
-                  download="Amit_Kumar_Resume.pdf"
+                  href="/Farukh_Ali_Laravel_Developer_Resume_2026.pdf"
+                  download="Farukh_Ali_Resume.pdf"
                   className="group relative px-8 py-4 bg-black text-white font-bold text-sm tracking-wider overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <span className="relative z-10">DOWNLOAD RESUME</span>
@@ -87,16 +87,16 @@ const Hero = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
                 <div>
-                  <div className="text-3xl font-bold text-black">4+</div>
+                  <div className="text-3xl font-bold text-black">10+</div>
                   <div className="text-sm text-gray-500 mt-1">Projects</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-black">B.Tech</div>
+                  <div className="text-3xl font-bold text-black">MCA</div>
                   <div className="text-sm text-gray-500 mt-1">CS (AI & DS)</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-black">2025</div>
-                  <div className="text-sm text-gray-500 mt-1">Graduate</div>
+                  <div className="text-3xl font-bold text-black">2023</div>
+                  <div className="text-sm text-gray-500 mt-1">Post Graduate</div>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Hero = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent z-10 opacity-100 group-hover:opacity-0 transition-opacity duration-500"></div>
                   <Image
                     src={heroImage}
-                    alt="Amit Kumar"
+                    alt="FARUKH ALI"
                     layout="fill"
                     objectFit="cover"
                     className="grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
@@ -140,7 +140,7 @@ const Hero = () => {
 
       <Education />
       <Project />
-      <VideoResume />
+      {/* <VideoResume /> */}
       <Footer />
     </>
   );

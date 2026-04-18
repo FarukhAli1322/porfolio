@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amit Kumar",
+  title: "Farukh Ali",
   description:
-  "Amit Kumar | Full Stack Developer | MERN Stack | Passionate about building scalable web applications, solving complex problems, and creating seamless user experiences. Skilled in React.js, Next.js, Node.js, and Data Structures & Algorithms.",
+  "Farukh Ali | Full Stack Developer | MERN Stack | Passionate about building scalable web applications, solving complex problems, and creating seamless user experiences. Skilled in React.js, Next.js, Node.js, and Data Structures & Algorithms.",
 };
 
 export default function RootLayout({

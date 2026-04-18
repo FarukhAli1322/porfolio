@@ -27,18 +27,18 @@ const Education = () => {
           <div className="space-y-4">
             <div className="flex items-start justify-between">
               <div>
-                <h3 className="text-2xl font-bold text-black">CT University</h3>
-                <p className="text-sm font-semibold text-gray-500 mt-1">2021 - 2025</p>
+                <h3 className="text-2xl font-bold text-black">MAHARAJA AGRASEN INSTITUTE</h3>
+                <p className="text-sm font-semibold text-gray-500 mt-1">2021 - 2023</p>
               </div>
               <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
                 <span className="text-xl">🎓</span>
               </div>
             </div>
             <p className="text-lg font-medium text-gray-700">
-              B.Tech Computer Science Engineering
+              Master's of Computer Applications
             </p>
             <p className="text-sm text-gray-600">
-              Specialization: AI & Data Science
+              Specialization: Data Structure & DBMS
             </p>
             <div className="pt-4 border-t border-gray-200">
               <p className="text-xs font-semibold text-gray-500 mb-2">KEY COURSEWORK</p>
@@ -59,23 +59,23 @@ const Education = () => {
           <div className="space-y-4">
             <div className="flex items-start justify-between">
               <div>
-                <h3 className="text-2xl font-bold text-black">GNM School</h3>
-                <p className="text-sm font-semibold text-gray-500 mt-1">2019 - 2020</p>
+                <h3 className="text-2xl font-bold text-black">KURUKSHETRA UNIVERSITY</h3>
+                <p className="text-sm font-semibold text-gray-500 mt-1">2018 - 2021</p>
               </div>
               <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
                 <span className="text-xl">📚</span>
               </div>
             </div>
             <p className="text-lg font-medium text-gray-700">
-              Non-Medical (Engineering)
+              Bachelor of computer applications
             </p>
             <p className="text-sm text-gray-600">
-              Foundation in Science & Mathematics
+              Foundation in Web Development & Mathematics
             </p>
             <div className="pt-4 border-t border-gray-200">
               <p className="text-xs font-semibold text-gray-500 mb-2">KEY SUBJECTS</p>
               <div className="flex flex-wrap gap-2">
-                {['Mathematics', 'Physics', 'Chemistry'].map((subject, i) => (
+                {['Web Development'].map((subject, i) => (
                   <span key={i} className="px-3 py-1 bg-black/5 text-xs font-semibold text-gray-700 rounded-full">
                     {subject}
                   </span>

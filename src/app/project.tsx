@@ -2,53 +2,53 @@ import React from 'react';
 
 const projects = [
   {
-    name: 'ConnX.in',
-    description: 'A video-based freelance platform where freelancers can showcase their work through short videos, making it easier for clients to discover and hire them.',
+    name: 'Poster Maker',
+    description: 'Poster Maker is an AI-powered web application that allows users to create custom posters based on their preferences. Users can generate designs using AI and further customize them with text, styles, and layouts.',
     features: [
-      'Freelancers upload short video portfolios',
-      'Clients can directly connect from posts',
-      'Video engagement boosts visibility for freshers',
-      'Secure in-app messaging & hiring process',
+      'AI-based poster generation',
+      'Poster editing & customization',
+      'Video poster creation',
+      'Carousel (multi-slide) design',
     ],
-    techStack: ['Next.js', 'Tailwind CSS', 'Firebase', 'Node.js', 'WebRTC'],
-    link: 'https://connx.in',
+    techStack: ['Laravel', 'Python', 'jQuery', 'Chat-GPT'],
+    link: 'https://apps.apple.com/us/app/poster-maker-ai-flyer-design/id1241339881',
   },
   {
-    name: 'Campus Reveal',
-    description: 'An anonymous college review platform where students can share their experiences and opinions without revealing their identity.',
+    name: 'ERP',
+    description: 'ERP-based HRMS system with smart attendance using fingerprint, face recognition, and RFID integration.',
     features: [
-      'Users can post college reviews anonymously',
-      'Secure and spam-free environment',
-      'Real-time upvotes and comments',
-      'Helps prospective students make informed decisions',
+      'Employee management (HRMS)',
+      'Smart attendance system (Fingerprint, Face, RFID)',
+      'Real-time in/out tracking',
+      'Automated attendance records',
     ],
-    techStack: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
-    link: 'https://campusreveal.vercel.app',
+    techStack: ['Laravel', 'Livewire', 'jQuery'],
+    link: 'https://erp.iapplabz.co.in/login',
   },
-  {
-    name: 'AnnouncePro',
-    description: 'A Python-based automated announcement management system that delivers announcements accurately and runs 24/7.',
-    features: [
-      'Automates university-wide announcements',
-      'Runs continuously 24x7 without manual intervention',
-      'Scheduled notifications and real-time updates',
-      'Desktop-based application with intuitive UI',
-    ],
-    techStack: ['Python', 'Tkinter', 'SQLite', 'Windows Services'],
-    link: 'https://announcepro.vercel.app/',
-  },
-  {
-    name: 'Recommender System',
-    description: 'An AI-powered content-based recommendation system that suggests relevant content based on user behavior and interests.',
-    features: [
-      'Uses NLP techniques for content analysis',
-      'TF-IDF vectorization for similarity computation',
-      'User-friendly interface built with Streamlit',
-      'Predicts recommendations based on user preferences',
-    ],
-    techStack: ['Python', 'TensorFlow', 'Flask', 'Streamlit'],
-    link: 'https://github.com/amitkumar2308/Content-based-recommendation',
-  },
+  // {
+  //   name: 'AnnouncePro',
+  //   description: 'A Python-based automated announcement management system that delivers announcements accurately and runs 24/7.',
+  //   features: [
+  //     'Automates university-wide announcements',
+  //     'Runs continuously 24x7 without manual intervention',
+  //     'Scheduled notifications and real-time updates',
+  //     'Desktop-based application with intuitive UI',
+  //   ],
+  //   techStack: ['Python', 'Tkinter', 'SQLite', 'Windows Services'],
+  //   link: 'https://announcepro.vercel.app/',
+  // },
+  // {
+  //   name: 'Recommender System',
+  //   description: 'An AI-powered content-based recommendation system that suggests relevant content based on user behavior and interests.',
+  //   features: [
+  //     'Uses NLP techniques for content analysis',
+  //     'TF-IDF vectorization for similarity computation',
+  //     'User-friendly interface built with Streamlit',
+  //     'Predicts recommendations based on user preferences',
+  //   ],
+  //   techStack: ['Python', 'TensorFlow', 'Flask', 'Streamlit'],
+  //   link: 'https://github.com/amitkumar2308/Content-based-recommendation',
+  // },
 ];
 
 const Project = () => {
@@ -148,7 +148,7 @@ const Project = () => {
         <div className="inline-flex flex-col items-center gap-4 p-8 border-2 border-gray-200 hover:border-black transition-colors">
           <p className="text-sm font-bold tracking-wider text-gray-500">WANT TO SEE MORE?</p>
           <a
-            href="https://github.com/amitkumar2308"
+            href="https://github.com/FarukhAli1322"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-black text-white font-bold text-sm tracking-wider hover:bg-gray-800 transition-all duration-300 hover:scale-105"

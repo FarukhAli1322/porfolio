@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-2 h-2 bg-white rounded-full"></div>
-              <span className="text-sm font-bold tracking-[0.3em]">AMIT KUMAR</span>
+              <span className="text-sm font-bold tracking-[0.3em]">FARUKH ALI</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Software Development Engineer passionate about building scalable solutions and solving complex problems.
@@ -39,10 +39,10 @@ const Footer = () => {
               <a href="#projects" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Projects
               </a>
-              <a href="#resume" className="block text-gray-400 hover:text-white transition-colors text-sm">
+              {/* <a href="#resume" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Video Resume
-              </a>
-              <a href="/resume.pdf" download className="block text-gray-400 hover:text-white transition-colors text-sm">
+              </a> */}
+              <a href="/Farukh_Ali_Laravel_Developer_Resume_2026.pdf" download className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Download Resume
               </a>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-white/10 transition-colors">
                 <FaEnvelope className="text-sm" />
               </div>
-              <span className="text-sm">amitk.developer23@gmail.com</span>
+              <span className="text-sm">farukhali1322@gmail.com</span>
             </a>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="flex flex-wrap items-center justify-between gap-8 py-8 border-t border-white/10">
           <div className="flex gap-4">
             <a
-              href="https://leetcode.com/amitk2308"
+              href="https://leetcode.com/u/farukh_ali/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/5 hover:bg-white hover:text-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -76,7 +76,7 @@ const Footer = () => {
               <SiLeetcode className="text-lg" />
             </a>
             <a
-              href="https://github.com/amitkumar2308"
+              href="https://github.com/FarukhAli1322"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/5 hover:bg-white hover:text-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -85,7 +85,7 @@ const Footer = () => {
               <FaGithub className="text-lg" />
             </a>
             <a
-              href="https://linkedin.com/in/amitkumar-profile"
+              href="https://www.linkedin.com/in/farukh-ali-02b347222/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-white/5 hover:bg-white hover:text-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -93,7 +93,7 @@ const Footer = () => {
             >
               <FaLinkedin className="text-lg" />
             </a>
-            <a
+            {/* <a
               href="https://www.youtube.com/@thejuniorengineer2308"
               target="_blank"
               rel="noopener noreferrer"
@@ -101,11 +101,11 @@ const Footer = () => {
               title="YouTube"
             >
               <FaYoutube className="text-lg" />
-            </a>
+            </a> */}
           </div>
 
           <div className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Amit Kumar. All rights reserved.
+            © {new Date().getFullYear()} FARUKH ALI. All rights reserved.
           </div>
         </div>
 
